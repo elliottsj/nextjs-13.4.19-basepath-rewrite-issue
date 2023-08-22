@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "deploy": "netlify deploy --build --auth $NETLIFY_AUTH_TOKEN --site c2547a19-9a88-4c01-a6c5-67b150e3d6bf --context branch:plugin-nextjs-latest --alias plugin-nextjs-latest",
+    "deploy": "netlify deploy --build --auth $NETLIFY_AUTH_TOKEN --site c2547a19-9a88-4c01-a6c5-67b150e3d6bf --context branch:both-latest --alias both-latest",
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
