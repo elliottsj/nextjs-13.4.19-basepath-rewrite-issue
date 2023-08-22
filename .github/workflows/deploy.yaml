@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - nextjs-canary
 
 jobs:
   deploy:
@@ -28,6 +29,5 @@ jobs:
       - name: Run deploy script
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NEXT_REWRITE_DOCS_URL: https://nextjs-basepath-rewrite-issue-docs.netlify.app/docs
+          NEXT_REWRITE_DOCS_URL: https://nextjs-canary--nextjs-basepath-rewrite-issue-docs.netlify.app/docs
         run: pnpm run deploy
-  
